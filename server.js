@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect( proccess.env.MONGODB_URI, {
+mongoose.connect(proccess.env.MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
